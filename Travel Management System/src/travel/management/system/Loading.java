@@ -32,12 +32,12 @@ public class Loading extends JFrame implements Runnable {
         t = new Thread(this);
 
         setBounds(500, 200, 650, 400);
-        getContentPane().setBackground(Color.WHITE);
+        getContentPane().setBackground(new Color(28, 27, 62));
         setLayout(null);
 
         JLabel text = new JLabel("Travel and Tourism Application");
         text.setBounds(50, 20, 600, 40);
-        text.setForeground(Color.MAGENTA);
+        text.setForeground(new Color(255, 193, 7));
         text.setFont(new Font("Tahoma", Font.BOLD, 35));
         add(text);
 
@@ -48,13 +48,13 @@ public class Loading extends JFrame implements Runnable {
 
         JLabel loading = new JLabel("Loading, please wait...");
         loading.setBounds(230, 130, 150, 30);
-        loading.setForeground(Color.RED);
+        loading.setForeground(new Color(255, 87, 34));
         loading.setFont(new Font("Tahoma", Font.BOLD, 16));
         add(loading);
 
         JLabel lblusername = new JLabel("Welcome " + username);
         lblusername.setBounds(20, 310, 400, 40);
-        lblusername.setForeground(Color.RED);
+        lblusername.setForeground(new Color(3, 169, 244));
         lblusername.setFont(new Font("Tahoma", Font.BOLD, 16));
         add(lblusername);
 
@@ -66,3 +66,9 @@ public class Loading extends JFrame implements Runnable {
         new Loading("");
     }
 }
+
+
+
+
+
+
